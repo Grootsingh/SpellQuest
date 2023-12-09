@@ -68,7 +68,6 @@ function HelpButton({ children, handleIsOpen }) {
         onMouseDown={() => setMostRecentAction("depressed")}
         onMouseUp={() => setMostRecentAction("released")}
         onMouseLeave={() => setMostRecentAction("exited")}
-        onFocus={() => setMostRecentAction("hovering")}
         onKeyUp={(event) => {
           if (event.key === "Tab") {
             setMostRecentAction("hovering");
