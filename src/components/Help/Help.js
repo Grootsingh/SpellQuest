@@ -69,7 +69,15 @@ function HelpButton({ children, handleIsOpen }) {
         onMouseUp={() => setMostRecentAction("released")}
         onMouseLeave={() => setMostRecentAction("exited")}
         onFocus={() => setMostRecentAction("hovering")}
+        onKeyUp={(event) => {
+          if (event.key === "Tab") {
+            setMostRecentAction("hovering");
+          }
+        }}
         onKeyDown={(event) => {
+          if (event.key === "Tab") {
+            setMostRecentAction(null);
+          }
           if (event.key === "Enter") {
             setMostRecentAction("released");
           }
