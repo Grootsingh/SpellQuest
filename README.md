@@ -13,7 +13,7 @@ Explore the SpellQuest interface and get a glimpse of the excitement with our in
 
 Ready to embark on the SpellQuest? Join now and let the spelling adventure unfold! 🎉
 
-[Try Demo]()
+[Let's play the SpellQuest](https://spell-quest.vercel.app/)
 
 ## How to Play
 
@@ -35,4 +35,4 @@ Ready to embark on the SpellQuest? Join now and let the spelling adventure unfol
 
 Join the SpellQuest now and let the spelling adventure begin!
 
-[Sign Up for SpellQuest](https://spellquest.placeholder/signup)
+[Let's play the SpellQuest](https://spell-quest.vercel.app/)
