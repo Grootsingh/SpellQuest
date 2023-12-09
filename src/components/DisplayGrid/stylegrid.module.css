@@ -1,0 +1,51 @@
+.GridWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cell-gap);
+  flex: 1;
+  justify-content: center;
+}
+
+.cell {
+  display: grid;
+  place-content: center;
+  aspect-ratio: 1;
+  width: 20%;
+  font-size: 2rem;
+  border-radius: var(--cell-radius);
+  border: 2px solid var(--color-gray-700);
+}
+
+.row {
+  display: flex;
+  gap: var(--cell-gap);
+}
+
+.row:first-child > .cell:first-child {
+  --cell-radius: var(--grid-corner) 1px 1px 1px;
+}
+.row:first-child > .cell:last-child {
+  --cell-radius: 1px var(--grid-corner) 1px 1px;
+}
+.row:last-child > .cell:first-child {
+  --cell-radius: 1px 1px 1px var(--grid-corner);
+}
+.row:last-child > .cell:last-child {
+  --cell-radius: 1px 1px var(--grid-corner) 1px;
+}
+
+.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}

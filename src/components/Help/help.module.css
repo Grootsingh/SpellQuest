@@ -1,0 +1,59 @@
+.helpButton {
+  aspect-ratio: 1;
+  background-color: var(--color-gray-900);
+  border-radius: 500px;
+  border: 2px solid var(--color-gray-500);
+  width: 35px;
+  font-weight: 600;
+  opacity: 0.55;
+}
+
+.dialogWrapper {
+  --space: 20px;
+  position: fixed;
+  right: 50px;
+  top: var(--space);
+}
+dialog {
+  margin-top: 25px;
+  border-color: var(--color-gray-300);
+  border-radius: 1rem;
+  transform: translateX(calc(-50% + 1rem)) translateY(30%);
+  background-color: var(--color-gray-900);
+  border-color: var(--color-gray-300);
+  animation: slowMo 400ms ease-out;
+  will-change: transform;
+}
+
+.decoration {
+  position: absolute;
+  background-color: var(--color-gray-300);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  width: 20px;
+  height: 20px;
+  left: calc(50% - 10px);
+  transform: translateY(calc(-100% - 20px + 1px));
+}
+
+@keyframes slowMo {
+  0% {
+    transform: translateX(calc(-50% + 1rem)) translateY(20%);
+  }
+
+  80% {
+    transform: translateX(calc(-50% + 1rem)) translateY(34%);
+  }
+
+  100% {
+    transform: translateX(calc(-50% + 1rem)) translateY(30%);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

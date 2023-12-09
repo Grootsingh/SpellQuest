@@ -1,0 +1,100 @@
+html {
+  overflow-y: scroll;
+
+  --game-spacing: 32px;
+  --header-height: 4rem;
+  --cell-gap: 4px;
+  --grid-corner: 4px;
+  --cell-radius: 1px;
+
+  --color-success: hsl(150deg 70% 30%);
+  --color-warning: hsl(50deg 100% 30%);
+  --color-error: hsl(0deg 70% 45%);
+
+  --color-success-shadow: hsl(150.28deg 70.21% 23.22%);
+  --color-error-shadow: hsl(0deg 70.71% 35.7%);
+
+  --color-gray-100: hsl(0deg 0% 10%);
+  --color-gray-300: hsl(0deg 0% 25%);
+  --color-gray-500: hsl(0deg 0% 50%);
+  --color-gray-700: hsl(0deg 0% 75%);
+  --color-gray-900: hsl(0deg 0% 90%);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px;
+  text-align: center;
+  animation: slideUp 750ms cubic-bezier(0, 0.72, 0.24, 1.02) alternate both;
+  border-radius: 4px 4px 0px 0px;
+  will-change: transform;
+}
+
+.replayMenu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 8px;
+  line-height: 3rem;
+}
+
+.animateButton {
+  aspect-ratio: 1;
+  width: 49px;
+  border-radius: 500px;
+  color: var(--color-gray-300);
+  border: none;
+  transform: rotate(51deg);
+
+  font-size: 1.8rem;
+  font-weight: bolder;
+  background: #ffffff;
+}
+
+@keyframes circuler {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.happy.banner {
+  background: var(--color-success);
+  color: white;
+}
+.sad.banner {
+  background: var(--color-error);
+  color: white;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(10%);
+  }
+  20% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}

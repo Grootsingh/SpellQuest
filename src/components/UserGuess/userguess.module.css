@@ -1,0 +1,18 @@
+form > input[id="userInput"] {
+  border: 2px solid var(--color-gray-300);
+  border-radius: 4px;
+  padding: 8px 16px;
+  outline-offset: 4px;
+  font-size: 2rem;
+}
+
+form > label {
+  font-size: 1.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4px;
+  gap: 6px;
+}

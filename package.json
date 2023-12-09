@@ -1,0 +1,23 @@
+{
+  "name": "SpellQuest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel public/index.html",
+    "build": "parcel build",
+    "new-component": "new-component"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "new-component": "^5.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
