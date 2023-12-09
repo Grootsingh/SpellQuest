@@ -1,12 +1,11 @@
 {
   "name": "SpellQuest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Word Game",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel public/index.html",
-    "build": "parcel build",
+    "build": "parcel build public/index.html",
     "new-component": "new-component"
   },
   "author": "",
