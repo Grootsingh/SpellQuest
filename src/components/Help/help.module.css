@@ -9,10 +9,15 @@
 }
 
 .dialogWrapper {
-  --space: 20px;
-  position: fixed;
+  position: absolute;
   right: 50px;
-  top: var(--space);
+  top: 20px;
+}
+
+@media (max-width: 29rem) {
+  .helpButton {
+    display: none;
+  }
 }
 dialog {
   margin-top: 25px;
